@@ -21,7 +21,9 @@ MyGPT can be installed on following environments:
 
 - [Personal Computer - no GPU](#personal-computer---no-gpu)
 - [Personal Computer - with GPU](#personal-computer---with-gpu)
-- Google Colab (coming soon)
+- Google Colab - no GPU (coming soon)
+- Google Colab - GPU (T40) (coming soon)
+- Google Colab - GPU (A100) (coming soon)
 - Server with GPU (coming soon)
 - Amazon Web Services (AWS) - GPU (coming soon)
 
@@ -30,7 +32,10 @@ MyGPT can be installed on following environments:
 For this installtion, the entire pipeline will run as a single unit on CPUs. This is the easiest way to get started with MyGPT, but it is also the response time will be slowest.
 
 To run the pipleine on following environments, follow the instructions from the Google colab notebook:
-* Mac without GPU [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1h92XHMT5D_vlmf2oEZ0BRn3ke41Cz9p4?usp=sharing)
+* Mac without GPU
+	- [Simple instructions](./installation/pc_no_gpu/mac/README.md): This are simple insturctions with bash scripts, although it's easy to follow, it's not interactive and doesn't have troubleshooting steps. If you come across any bug or error, please report it in the issues section. You can also modify bash scripts as per your convenience.
+	- Detailed instructions: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1h92XHMT5D_vlmf2oEZ0BRn3ke41Cz9p4?usp=sharing)
+	This are instructions with interactive Jupyter notebook on Google colab, it has troubleshooting steps and is easy to follow. If you come across any bug or error, please report it in the issues section. You can also modify Jupyter notebook as per your convenience.
 * Linux without GPU [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1feKcAvNwMIZpx7UGOb3UYhw_HFMC_kHP?usp=sharing)
 * Windows without GPU [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1r9cGHFwl4VStyb0szC4U-6hidXjtZBDE?usp=sharing)
 
