@@ -21,9 +21,7 @@ MyGPT can be installed on following environments:
 
 - [Personal Computer - no GPU](#personal-computer---no-gpu)
 - [Personal Computer - with GPU](#personal-computer---with-gpu)
-- Google Colab - no GPU (coming soon)
-- Google Colab - GPU (T40) (coming soon)
-- Google Colab - GPU (A100) (coming soon)
+- Google Colab (coming soon)
 - Server with GPU (coming soon)
 - Amazon Web Services (AWS) - GPU (coming soon)
 
@@ -47,9 +45,9 @@ Because we are using GPU for this method, the response time will be much faster 
 
 To run the pipleine on following environments, follow the instructions:
 * Mac with Apple GPU
-- [Simple instructions](./installation/pc_with_gpu/macOS/README.md): This are simple insturctions with bash scripts, although it's easy to follow, it's not interactive and doesn't have troubleshooting steps. You can also modify bash scripts as per your convenience.
-- Detailed instructions: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1mNqsBPNbzra3h3i9ggqOyPDEehrnAMdZ?usp=sharing)
-This are instructions with interactive Jupyter notebook on Google colab, it has troubleshooting steps. If you come across any bug or error, please report it in the issues section. You can also modify Jupyter notebook as per your convenience.
+	- [Simple instructions](./installation/pc_with_gpu/macOS/README.md): This are simple insturctions with bash scripts, although it's easy to follow, it's not interactive and doesn't have troubleshooting steps. You can also modify bash scripts as per your convenience.
+	- Detailed instructions: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1mNqsBPNbzra3h3i9ggqOyPDEehrnAMdZ?usp=sharing)
+	This are instructions with interactive Jupyter notebook on Google colab, it has troubleshooting steps. If you come across any bug or error, please report it in the issues section. You can also modify Jupyter notebook as per your convenience.
 
 ## User Interface
 MyGPT user interface will allow users to check the publcation library, ask questions, and get answers. The user interface is built using ReactJS.
