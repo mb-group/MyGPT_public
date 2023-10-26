@@ -103,8 +103,10 @@ We will install these two tools in the following steps:
 	* llama: http://localhost/
 
 		<img src="https://github.com/mb-group/MyGPT_public/blob/main/images/llm_api_server.png?raw=true" width="600px">
-		
+
 	* frontend: http://localhost:3000/
+
+		<img src="https://github.com/mb-group/MyGPT_public/blob/main/images/frontend_launch.png?raw=true" width="600px">
 
 
 ## Other optional tasks for MyGPT pipeline

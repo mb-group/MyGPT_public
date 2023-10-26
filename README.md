@@ -54,3 +54,7 @@ MyGPT user interface will allow users to check the publcation library, ask quest
 Here is an example of the user interface with question, answer, and source citing:
 
 <img src='./images/MyGPT_UI.png' width='800px' alt='MyGPT user interface'>
+
+## Issues
+
+If you come across any bug or error, please report it in the [issues](https://github.com/mb-group/MyGPT_public/issues) section.
