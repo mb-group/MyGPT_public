@@ -1,6 +1,6 @@
 # MyGPT
 
-This repository contains installation instructions and images for the MyGPT.
+<b>Note: This repository contains installation instructions for the MyGPT. <u>It will not work without source code.</u> If you need access to MyGPT source code, please contact Jaimin Patel (Email: jaimin.patel@stjude.org) or appropriate person.</b>
 
 ## introduction
 
