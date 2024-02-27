@@ -68,17 +68,26 @@ We will install these required tools in the following steps:
 	If you want to get source code from GitHub we will first get MyGPT source code by running following command. It will create `MyGPT` folder on your Desktop. To get the source code from GitHub, we will need `GitHub username` and `GitHub access token` as the GitHub repo is private. When you run the following command, it will ask for this credentials.
 
 	```
-	git clone https://github.com/mb-group/MyGPT.git
+	git clone https://github.com/mb-group/MyGPT_public.git
 	```
 
 	<u>Note:</u> If you don't have GitHub access token, you can genearte classic token using this guideline: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic
 
-2. **Run docker containers**
+2. login to GitHub Docker registry
+
+	As the GitHub repository is private rightnow, we have to login to GitHub Docker registry to use the prebuilt images. To login to GitHub Docker registry, run following command. It will ask for your GitHub username and password. 
+	<u> Caution: the password is your access token (same token you used in step 1), not your github password you use to login in github account. </u>
+
+	```
+	docker login ghcr.io
+	```
+
+3. **Run docker containers**
 
 	We will run following script to run docker containers:
 
 	```
-	cd MyGPT/installation/macOS
+	cd MyGPT_public/installation/macOS
 	bash run_docker.sh
 	```
 
