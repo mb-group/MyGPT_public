@@ -6,7 +6,7 @@
 
 # MyGPT_public
 
-<b>Note: This repository contains installation instructions for the MyGPT with Dokcer images and will not need source code. If you need access to MyGPT source to help in development process, please contact Jaimin Patel (Email: jaimin.patel@stjude.org) or appropriate person.</b>
+<b>Note: This repository contains installation instructions for the MyGPT with Docker images and will not need source code. If you need access to MyGPT source to help in development process, please contact Jaimin Patel (Email: jaimin.patel@stjude.org) or appropriate person.</b>
 
 ChatGPT has revolutionized creative occupations, but tasks requiring factual backing suffer from generalized models and limitations such as hallucinations and inconsistency. Here, we present MyGPT — an open-source Large Language Model (LLM) pipeline to ask questions for content from a curated list of publications or video/audio lectures. MyGPT minimizes hallucination by providing a context for the question and generates accurate answers with source citing. MyGPT can run on personal devices or cloud infrastructures and can help with complex tasks such as literature review and learning. 
 

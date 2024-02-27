@@ -1,4 +1,4 @@
-# Installation on Linux without GPU
+# Installation on Linux
 
 ## Requirements
 
@@ -50,9 +50,6 @@ We will install these two tools in the following steps:
 
 	If you get an error that `docker not found`,   Go to the official Docker installation page for Linux and install the appropriate Docker on your system: https://docs.docker.com/desktop/install/linux-install/
 
-	You can change Docker setting to match requirements for MyGPT:
-	<img src="https://github.com/mb-group/MyGPT_public/blob/main/images/docker_resources.png?raw=true" width="700px">
-
 4. **Ollama installation**
 
 	Finally, download and install Ollama by following instructions from this offical [Ollama site](https://ollama.ai/)
@@ -84,12 +81,13 @@ We will install these two tools in the following steps:
 	git clone https://github.com/mb-group/MyGPT_public.git
 	```
 
-	<u>Note:</u> If you don't have GitHub access token, you can genearte classic token using this guideline: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic
+	<ins>Note:</ins> If you don't have GitHub access token, you can genearte classic token using this guideline: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic
 
 2. login to GitHub Docker registry
 
 	As the GitHub repository is private rightnow, we have to login to GitHub Docker registry to use the prebuilt images. To login to GitHub Docker registry, run following command. It will ask for your GitHub username and password. 
-	<u> Caution: the password is your access token (same token you used in step 1), not your github password you use to login in github account. </u>
+	
+	<ins>Caution:</ins> the password is your access token (same token you used in step 1), not your github password you use to login in github account. 
 
 	```
 	sudo docker login ghcr.io
