@@ -1,4 +1,4 @@
-# Installation on Mac without GPU
+# Installation on Mac OS
 
 ## Requirements
 
@@ -38,7 +38,6 @@ We will install these two tools in the following steps:
 
 	```
 	brew install git
-	brew install aria2
 	```
 
 3. **Docker installation**

@@ -1,8 +1,6 @@
-# Installation on Linux without GPU
+# Installation on Windows without GPU
 
 ## Requirements
-
-This readme is an example for a Linux with Ubuntu platform. Only difference between Ubuntu and other platform is how packages are installed, for example, we will be using `apt` in this readme but you can use your own installer like `dnf` or `pacman` as per your Linux platform.
 
 To Run the MyGPT pipeline, we will need the following minimum specifications for your system:
 
@@ -12,30 +10,53 @@ To Run the MyGPT pipeline, we will need the following minimum specifications for
 
 We will also need several tools to run the pipeline:
 
+*   Python
+*   Choco
 *   Git
-*   Apt
+*   Rust
+*   aria2
 *   Docker
 
 ## Requirements installation
 
 We will install these two tools in the following steps:
 
-1. **Brew installation**
+1. **Python installation**
 
-	Check if you have `apt` installed on your system by running following command.
-
-	```
-	apt --help
-	```
-
-	If you get error that apt not found, you can check what package manager your platform is using as default. Some of the default package managers for Linux system are dnf, yum and pacman. If you have any of these package managers, you might want to edit the commands in the cell below according to your needs. We will be using these package manager to install Git, Docker and aira2.
-
-2.  **Brew packages installation**
-
-	We will install Brew packages by running following commands:
+	Check if you have `python` installed on your system by running following command.
 
 	```
-	sudo apt install git
+	python --version
+	```
+
+	If python is not isntalled on your PC, install it by downloading latest release from this page: https://www.python.org/downloads/windows/
+     
+    While Python installtion, make sure to select the following option:
+    <img src="https://github.com/mb-group/MyGPT_public/blob/main/images/python_install_windows.png?raw=true" width="700px">
+
+2. **Chocolatory installation**
+
+	First open Command Prompot as Administrator and locate your desired folder or Desktop. To open Command Prompt as Administrator check this guide: https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-10/
+
+	Check if you have `choco` installed on your system by running following command.
+
+	```
+	choco --version
+	```
+
+	If you get error that `choco not found`, you can install `choco` by folliwng
+	command from the new Command Prompt window (similar to Jupyter installation but open new tab for Command Prompt without closing existing window that's running Jupyter). For more details about brew check this [page](https://docs.chocolatey.org/en-us/choco/setup#install-with-cmd.exe)
+
+	```
+	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+	```
+
+2.  **Chocolatory packages installation**
+
+	We will install Chocolatory packages by running following commands:
+
+	```
+	choco install git rust aria2 -y
 	```
 
 3. **Docker installation**
@@ -47,8 +68,10 @@ We will install these two tools in the following steps:
 	docker --version
 	```
 
-	If you get an error that `docker not found`,   Go to the official Docker installation page for Linux and install the appropriate Docker on your system: https://docs.docker.com/desktop/install/linux-install/
+	If you get an error that `docker not found`, go to the official Docker installation page for Mac and install the appropriate Docker on your system: https://docs.docker.com/desktop/install/mac-install/
 
+	<u>Troubleshoot help:</u> if you get error `Docker desktop requires a newer WSL kernel version on Windows`, go to this post to fix it: https://medium.com/@dilsharahasanka/solved-docker-desktop-requires-a-newer-wsl-kernel-version-on-windows-b093b1684c0b
+	
 	You can change Docker setting to match requirements for MyGPT:
 	<img src="https://github.com/mb-group/MyGPT_public/blob/main/images/docker_resources.png?raw=true" width="700px">
 
@@ -71,7 +94,7 @@ We will install these two tools in the following steps:
 	We will run following script to download the LLM model and modify the setting files:
 
 	```
-	bash MyGPT/installation/pc_no_gpu/linux/set_environment.sh
+	bash MyGPT/installation/pc_no_gpu/macOS/set_environment.sh
 	```
 
 3. **Build docker images**
@@ -79,7 +102,7 @@ We will install these two tools in the following steps:
 	We will run following script to build docker images:
 
 	```
-	bash MyGPT/installation/pc_no_gpu/linux/build_docker.sh
+	bash MyGPT/installation/pc_no_gpu/macOS/build_docker.sh
 	```
 
 4. **Run docker containers**
@@ -87,7 +110,7 @@ We will install these two tools in the following steps:
 	We will run following script to run docker containers:
 
 	```
-	bash MyGPT/installation/pc_no_gpu/linux/run_docker.sh
+	bash MyGPT/installation/pc_no_gpu/macOS/run_docker.sh
 	```
 
 	This script should take around 5-10 minutes to run.
@@ -127,7 +150,7 @@ We will install these two tools in the following steps:
 * After that, if you are running MyGPT pipeline stop it with the script below:
 
 	```
-	bash MyGPT/installation/pc_no_gpu/linux/stop_docker.sh
+	bash MyGPT/installation/pc_no_gpu/macOS/stop_docker.sh
 	```
 
 * After that, you have to follow steps 2 to 4 from installtion to run MyGPT pipeline again. 
@@ -147,7 +170,7 @@ https://www.zotero.org/groups/4982570/babu_group/collections/YTPMLXYY
 To create super user, run following command:
 
 ```
-bash MyGPT/installation/pc_no_gpu/linux/create_superuser.sh
+bash MyGPT/installation/pc_no_gpu/macOS/create_superuser.sh
 ```
 You can check backend database at http://localhost:8000/admin/ with username and password you created in above step.
 
@@ -156,5 +179,5 @@ You can check backend database at http://localhost:8000/admin/ with username and
 To stop docker containers, run following command:
 
 ```
-bash MyGPT/installation/pc_no_gpu/linux/stop_docker.sh
+bash MyGPT/installation/pc_no_gpu/macOS/stop_docker.sh
 ```

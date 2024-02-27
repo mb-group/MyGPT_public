@@ -1,6 +1,8 @@
-# Installation on Mac OS
+# Installation on Linux without GPU
 
 ## Requirements
+
+This readme is an example for a Linux with Ubuntu platform. Only difference between Ubuntu and other platform is how packages are installed, for example, we will be using `apt` in this readme but you can use your own installer like `dnf` or `pacman` as per your Linux platform.
 
 To Run the MyGPT pipeline, we will need the following minimum specifications for your system:
 
@@ -10,35 +12,31 @@ To Run the MyGPT pipeline, we will need the following minimum specifications for
 
 We will also need several tools to run the pipeline:
 
-*   Brew
+*   Apt
 *   Git
 *   Docker
 *   Ollama
 
 ## Requirements installation
 
-We will install these required tools in the following steps:
+We will install these two tools in the following steps:
 
 1. **Brew installation**
 
-	Check if you have `brew` installed on your system by running following command.
+	Check if you have `apt` installed on your system by running following command.
 
 	```
-	brew --version
+	apt --help
 	```
 
-	If you get error that `brew not found`, you can install brew by folliwng command from the new terminal window (similar to Jupyter installation but open new tab for terminal without closing existing window that's running Jupyter). For more details about brew check this [page](https://brew.sh/)
-
-	```
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-	```
+	If you get error that apt not found, you can check what package manager your platform is using as default. Some of the default package managers for Linux system are dnf, yum and pacman. If you have any of these package managers, you might want to edit the commands in the cell below according to your needs. We will be using these package manager to install Git, Docker and aira2.
 
 2.  **Brew packages installation**
 
 	We will install Brew packages by running following commands:
 
 	```
-	brew install git
+	sudo apt install git
 	```
 
 3. **Docker installation**
@@ -50,25 +48,31 @@ We will install these required tools in the following steps:
 	docker --version
 	```
 
-	If you get an error that `docker not found`, go to the official Docker installation page for Mac and install the appropriate Docker on your system: https://docs.docker.com/desktop/install/mac-install/
+	If you get an error that `docker not found`,   Go to the official Docker installation page for Linux and install the appropriate Docker on your system: https://docs.docker.com/desktop/install/linux-install/
 
 	You can change Docker setting to match requirements for MyGPT:
-	<img src="../../images/docker_resources.png?raw=true" width="700px">
-
+	<img src="https://github.com/mb-group/MyGPT_public/blob/main/images/docker_resources.png?raw=true" width="700px">
 
 4. **Ollama installation**
 
 	Finally, download and install Ollama by following instructions from this offical [Ollama site](https://ollama.ai/)
 
+	After installation, you can run following command in Terminal to start Ollama server, if you haven't done it already:
+
+	```
+	sudo systemctl start ollama
+	```
+
 	You can check if Ollama is running by visiting http://localhost:11434/ in your default browser.
 
-	Once you confirm Ollama is running, you have to pull Lllama2 model by running following command:
+	Once you start Ollama, you have to pull Lllama2 model by running following command:
 
 	```
 	ollama pull llama2
 	```
 
 ## MyGPT installation
+
 
 1. **Get MyGPT source code**
 
@@ -88,7 +92,7 @@ We will install these required tools in the following steps:
 	<u> Caution: the password is your access token (same token you used in step 1), not your github password you use to login in github account. </u>
 
 	```
-	docker login ghcr.io
+	sudo docker login ghcr.io
 	```
 
 3. **Run docker containers**
@@ -96,8 +100,8 @@ We will install these required tools in the following steps:
 	We will run following script to run docker containers:
 
 	```
-	cd MyGPT_public/installation/macOS
-	bash run_docker.sh
+	cd MyGPT_public/installation/linux
+	sudo sh run_docker.sh
 	```
 
 	This script should take around 5-10 minutes to run.
@@ -151,7 +155,7 @@ https://www.zotero.org/groups/4982570/babu_group/collections/YTPMLXYY
 To create super user, run following command:
 
 ```
-bash create_superuser.sh
+sudo sh create_superuser.sh
 ```
 You can check backend database at http://localhost:8000/admin/ with username and password you created in above step.
 
@@ -160,5 +164,5 @@ You can check backend database at http://localhost:8000/admin/ with username and
 To stop docker containers, run following command:
 
 ```
-bash stop_docker.sh
+sudo sh stop_docker.sh
 ```

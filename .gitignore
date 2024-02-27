@@ -1,1 +1,7 @@
 installation/macOS/data/*
+installation/macOS/libraries/*
+installation/linux/data/*
+installation/linux/libraries/*
+installation/windows/data/*
+installation/windows/libraries/*
+
