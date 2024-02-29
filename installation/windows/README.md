@@ -40,9 +40,6 @@ We will install these two tools in the following steps:
 	choco list
 	```
 
-	> [!NOTE] 
-	> You can run by clicking the Play button next to the code.
-
 	If you get error that `choco not found`, you can install `choco` by folliwng command from the new Command Prompt window:
 
 	```
@@ -82,8 +79,8 @@ We will install these two tools in the following steps:
 
 	You can check if Ollama is running by visiting http://localhost:11434/ in your default browser.
 
-	> [!CAUTION]
-	> After installing Ollama, close any open Terminal/Command Prompt before going to next step.
+> [!CAUTION]
+> After installing Ollama, close any open Terminal/Command Prompt before going to next step.
 
 	Once you start Ollama, you have to pull Lllama2 model by running following command:
 
@@ -104,11 +101,11 @@ We will install these two tools in the following steps:
 	git clone https://github.com/mb-group/MyGPT_public.git
 	```
 
-	> [!NOTE] 
-	> If you don't have GitHub access token, you can genearte classic token using this guideline: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic
+> [!NOTE] 
+> If you don't have GitHub access token, you can genearte classic token using this guideline: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic
 
-	> [!CAUTION] 
-	> While generating you GitHub Access Token, make sure you check access for `repo` and  `read:packages` similar to image below.
+> [!CAUTION] 
+> While generating you GitHub Access Token, make sure you check access for `repo` and  `read:packages` similar to image below.
 
 	<img src="../../images/GitHub_access_token_scope.png?raw=true" width="600px">
 
@@ -116,11 +113,11 @@ We will install these two tools in the following steps:
 
 	As the GitHub repository is private rightnow, we have to login to GitHub Docker registry to use the prebuilt images. To login to GitHub Docker registry, run following command. It will ask for your GitHub username and password. 
 
-	> [!CAUTION]
-	> Make sure Docker Desktop application is open and running before running the command.
+> [!CAUTION]
+> Make sure Docker Desktop application is open and running before running the command.
 	
-	> [!CAUTION] 
-	> the password is your access token (same token you used in step 1), not your github password you use to login in github account.
+> [!CAUTION] 
+> the password is your access token (same token you used in step 1), not your github password you use to login in github account.
 
 	```
 	docker login ghcr.io
