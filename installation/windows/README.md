@@ -81,6 +81,8 @@ We will install these two tools in the following steps:
 
 	You can check if Ollama is running by visiting http://localhost:11434/ in your default browser.
 
+	<div style="color : orangered"><ins>Caution:</ins> After installing Ollama, close any open Terminal/Command Prompt before going to next step. </div>
+
 	Once you start Ollama, you have to pull Lllama2 model by running following command:
 
 	```
@@ -102,11 +104,17 @@ We will install these two tools in the following steps:
 
 	<ins>Note:</ins> If you don't have GitHub access token, you can genearte classic token using this guideline: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic
 
+	<div style="color : orangered"><ins>Caution:</ins> While generating you GitHub Access Token, make sure you check access for `repo` and  `read:packages` similar to image below. </div>
+
+	<img src="../../images/GitHub_access_token_scope.png?raw=true" width="600px">
+
 2. login to GitHub Docker registry
 
 	As the GitHub repository is private rightnow, we have to login to GitHub Docker registry to use the prebuilt images. To login to GitHub Docker registry, run following command. It will ask for your GitHub username and password. 
+
+	<div style="color : orangered"><ins>Caution:</ins> Make sure Docker Desktop application is open and running before running the command. </div>
 	
-	<ins>Caution:</ins> the password is your access token (same token you used in step 1), not your github password you use to login in github account. 
+	<div style="color : orangered"><ins>Caution:</ins> the password is your access token (same token you used in step 1), not your github password you use to login in github account. </div>
 
 	```
 	docker login ghcr.io
