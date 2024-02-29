@@ -80,13 +80,13 @@ We will install these two tools in the following steps:
 	You can check if Ollama is running by visiting http://localhost:11434/ in your default browser.
 
 > [!CAUTION]
-> After installing Ollama, close any open Terminal/Command Prompt before going to next step.
+> After installing Ollama, close any open Terminal/Command Prompt before you pull Llama2.
 
-	Once you start Ollama, you have to pull Lllama2 model by running following command:
+Once you start Ollama, you have to pull Lllama2 model by running following command:
 
-	```
-	ollama pull llama2
-	```
+```
+ollama pull llama2
+```
 
 ## MyGPT installation
 
@@ -107,7 +107,7 @@ We will install these two tools in the following steps:
 > [!CAUTION] 
 > While generating you GitHub Access Token, make sure you check access for `repo` and  `read:packages` similar to image below.
 
-	<img src="../../images/GitHub_access_token_scope.png?raw=true" width="600px">
+<img src="../../images/GitHub_access_token_scope.png?raw=true" width="600px">
 
 2. login to GitHub Docker registry
 
@@ -115,13 +115,11 @@ We will install these two tools in the following steps:
 
 > [!CAUTION]
 > Make sure Docker Desktop application is open and running before running the command.
-	
-> [!CAUTION] 
 > the password is your access token (same token you used in step 1), not your github password you use to login in github account.
 
-	```
-	docker login ghcr.io
-	```
+```
+docker login ghcr.io
+```
 
 3. **Run docker containers**
 
