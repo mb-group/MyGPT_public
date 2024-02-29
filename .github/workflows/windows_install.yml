@@ -1,0 +1,24 @@
+name: Windows installation
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Docker
+      uses: docker/setup-buildx-action@v1
+
+    - name: Install Docker
+      run: |
+        choco install docker-desktop -y
+        choco install docker-compose -y
+
+    - name: run bash script
+      run: |
+        # Run bash script
+        sh run_docker.sh

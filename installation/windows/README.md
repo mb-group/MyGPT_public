@@ -127,7 +127,7 @@ docker login ghcr.io
 
 	```
 	cd MyGPT_public\installation\windows
-	sh run_docker.sh
+	run_docker.bat
 	```
 
 	This script should take around 5-10 minutes to run.
@@ -176,19 +176,19 @@ https://www.zotero.org/groups/4982570/babu_group/collections/YTPMLXYY
 
 ## Other optional tasks for MyGPT pipeline
 
-### create super user
+<!-- ### create super user
 
 To create super user, run following command:
 
 ```
 sh create_superuser.sh
 ```
-You can check backend database at http://localhost:8000/admin/ with username and password you created in above step.
+You can check backend database at http://localhost:8000/admin/ with username and password you created in above step. -->
 
 ### stop docker containers
 
 To stop docker containers, run following command:
 
 ```
-sh stop_docker.sh
+stop_docker.bat
 ```
