@@ -158,6 +158,15 @@ https://www.zotero.org/groups/4982570/babu_group/collections/YTPMLXYY
 
 ## Other optional tasks for MyGPT pipeline
 
+### update MyGPT docker images
+
+To update MyGPT docker images, run following command:
+
+```
+bash remove_images.sh
+bash run_docker.sh
+```
+
 ### create super user
 
 To create super user, run following command:
