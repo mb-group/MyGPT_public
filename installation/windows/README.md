@@ -64,9 +64,7 @@ We will install these two tools in the following steps:
 
 4. **Docker installation**
 
-	To run MyGPT with Windows, the entire pipeline will run as a single unit from Docker. Check if you have `docker` installed on your system by running following command.
-
-	After installation, to verify if Docker is running on your system, run the following code:
+	To run MyGPT with Windows, the entire pipeline will run as a single unit from Docker. Check if you have `docker` installed on your system by running following command:
 
 	```
 	docker --help
