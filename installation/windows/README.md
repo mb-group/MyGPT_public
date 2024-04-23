@@ -64,14 +64,14 @@ We will install these two tools in the following steps:
 
 4. **Docker installation**
 
-	To run MyGPT with CPUs-only, the entire pipeline will run as a single unit from Docker. Go to the official Docker installation page for Windows and install the appropriate Docker on your system: https://docs.docker.com/desktop/install/windows-install/
+	To run MyGPT with Windows, the entire pipeline will run as a single unit from Docker. Check if you have `docker` installed on your system by running following command.
 
 	After installation, to verify if Docker is running on your system, run the following code:
 
 	```
 	docker --help
 	```
-	If you get an error that `docker not found`,   Go to the official Docker installation page for Linux and install the appropriate Docker on your system: https://docs.docker.com/desktop/install/linux-install/
+	If you get an error that `docker not found`, Go to the official Docker installation page for Windows and install the appropriate Docker on your system: https://docs.docker.com/desktop/install/windows-install/
 
 5. **Ollama installation**
 
