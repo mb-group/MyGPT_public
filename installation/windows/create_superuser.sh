@@ -1,7 +1,7 @@
 ## create super user for backend app
 
 # find backend container id by image name
-backend_container_id=$(docker ps -aqf "ancestor=mygpt-backend")
+backend_container_id=$(docker ps -aqf "name=backend-1" -f "status=running")
 
 #ask for super username
 echo "Enter superuser name for backend app:"
