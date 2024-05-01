@@ -2,5 +2,5 @@
 docker compose down
 
 # remove docker images
-docker rmi frontend
-docker rmi backend
+docker rmi mygpt-frontend
+docker rmi mygpt-backend
