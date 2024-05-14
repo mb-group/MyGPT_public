@@ -21,4 +21,3 @@ jobs:
           sources: |
             ghcr.io/stjude-c3d/mygpt-frontend-frontend:amd64
             ghcr.io/stjude-c3d/mygpt-frontend-frotnend:arm64
-	  
