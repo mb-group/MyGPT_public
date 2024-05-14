@@ -20,4 +20,4 @@ jobs:
             ghcr.io/mb-group/mygpt-frontend:latest
           sources: |
             ghcr.io/mb-group/mygpt-frontend:amd64
-            ghcr.io/mb-group/mygpt-rotnend:arm64
+            ghcr.io/mb-group/mygpt-frontend:arm64
