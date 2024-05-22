@@ -50,3 +50,13 @@ services:
     depends_on:
       backend:
         condition: service_healthy
+  nginx:
+    build: ./nginx
+    volumes:
+      - ./backend/static:/static
+      - ./nginx/:/etc/nginx/conf.d/:ro
+      - ./certbot/www/:/var/www/certbot/:ro
+      - ./certbot/www/:/etc/nginx/ssl/:ro
+    ports:
+      - "80:80"
+      - "443:443"
