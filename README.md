@@ -1,7 +1,7 @@
 
 <!-- make div and show logo in middle -->
 <div align="center" style='padding:20px;'>
-	<img src='./images/android-chrome-512x512.png' width='200px' alt='MyGPT logo'>
+	<img src='./images/mygpt_logo_color.png' width='200px' alt='MyGPT logo'>
 </div>
 
 # MyGPT_public
@@ -24,8 +24,8 @@ We have divided the MyGPT pipeline architecture into three sections:
 MyGPT can be installed on following environments:
 
 - [Personal Computer](#personal-computer)
-- Server/VM with/without GPU (coming soon)
-- Amazon Web Services (AWS) (coming soon)
+- [Server/VM with GPU](#server-or-vm-with-gpu)
+- [Cloud services (Azure)](#cloud-services-azure)
 
 ### Personal Computer
 
@@ -47,6 +47,20 @@ To run the pipleine on following environments, follow the instructions:
 
 	These instructions are simple and easy to follow. You can also modify bash scripts as per your convenience.
 
+### Server or VM with GPU
+
+MyGPT can be hosted on a server or VM with GPU. For this installation we recommand to host User interface (UI), Backend server and Ollama (LLM server) on 3 seperate VMs. The Ollama VM should have a GPU with CUDA installed on the server/VM.
+
+To run the pipleine on VM/Server, follow the instructions:
+* [Linux Server Installation](./installation/vm/README.md)
+
+### Cloud services (Azure)
+
+MyGPT can be hosted on any cloud service but we are providing Azure as an example deploymnet. For this installation we recommand to host User interface (UI), Backend server and Ollama (LLM server) on 3 seperate VMs. The Ollama VM should have a GPU with CUDA installed on the VM.
+
+To run the pipleine on Azure, follow the instructions:
+* [Azure Installation](./installation/azure/README.md)
+
 ## User Interface
 MyGPT user interface will allow users to check the publcation library, ask questions, and get answers. The user interface is built using ReactJS.
 
@@ -54,6 +68,14 @@ Here is an example of the user interface with question, answer, and source citin
 
 <img src='./images/MyGPT_UI.png' width='800px' alt='MyGPT user interface'>
 
+## FAQs
+
+Check out the [FAQs](./FAQs.md) for common questions and answers.
+
+## API Documentation
+
+Developers who are interested in using MyGPT API can check the [API documentation](./API.md).
+
 ## Issues
 
-If you come across any bug or error, please report it in the [issues](https://github.com/smb-group/MyGPT_public/issues) section.
+If you come across any bug or error, please report it in the [issues](https://github.com/mb-group/MyGPT_public/issues) section.
