@@ -41,7 +41,6 @@ We will install these two tools in the following steps:
 
 3. **Docker installation**
 
-	To run MyGPT with CPUs-only, the entire pipeline will run as a single unit from Docker.
 	Check if you have `docker` installed on your system by running following command.
 
 	```
