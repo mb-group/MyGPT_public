@@ -1,27 +1,21 @@
-# Installation on Linux Server/VM
+# Installation on Azure VM
 
 ## Requirements
 For this installation, we recommand to host User interface (UI), Backend server and Ollama (LLM server) on 3 seperate VMs. The Ollama VM should have a GPU with CUDA installed on the server/VM.
 
-The server/VM should have the following requirements:
+For the demo purpose, we have hosted MyGPT on following Azure VMs. You can use the same configuration or modify it as per your requirements.:
 
-| MyGPT Component | RAM | CPU | Disk Space | OS | Additional Hardware/ Software |
-| --- | --- | --- | --- | --- | --- |
-| Frontend (UI) server | 8GB | 2 cores | 10GB | Ubuntu 20.04 LTS/ Red Hat Linux | Apache2 |
-| Backend server | 32GB | 8 cores | 100GB | Ubuntu 20.04 LTS/ Red Hat Linux | Docker, Docker Compose |
-| Ollama (LLM server) | 32GB | 12 cores | 100GB | Ubuntu 20.04 LTS/ Red Hat Linux | NVIDIA GPU (Tesla V100, P100, P4, T4, A100), CUDA |
+| MyGPT Component | Azure resource name | vRAM | vCPU | Disk Space | OS | Additional Hardware/ Software |
+| --- | --- | --- | --- | --- | --- | --- |
+| Frontend (UI) server | Premium_v3_P1V3  | 8GB | 2 | 250GB | Windows | Node 14 LTS |
+| Backend server | Standard_E4ads_v5 | 32GB | 4 | 150GB | Ubuntu 24.04 LTS | Docker, Docker Compose |
+| Ollama (LLM server) | Standard_NC8as_T4_v3 | 32GB | 8 | 56GB | Ubuntu 24.04 LTS | NVIDIA GPU - Tesla  T4 |
 
 ## Installation
 
 ### Frontend (UI) server
 
-1. Install Apache2
-	```bash
-	sudo apt update
-	sudo apt install apache2
-	```
-
-2. Build the frontend on your local machine
+1. Build the frontend on your local machine
 	```bash
 	git clone https://github.com/stjude-c3d/MyGPT.git
 	cd MyGPT/frontend
@@ -29,14 +23,14 @@ The server/VM should have the following requirements:
 	npm run build
 	```
 
-3. Copy the build files to the server
-	```bash
-	scp -r build/ user@server:/var/www/html/
-	```
+2. Copy the build files to the server
+	Create an azure website using the official documentation: [Create an Azure Web App](https://learn.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-azure-portal)
 
-4. Access the UI on the browser
+	And copy the build files from your local machine to the Azure Web App root folder - `site/wwwroot`.
+
+3. Access the UI on the browser
 	```
-	http://<server-ip>/index.html
+	http://<vm-ip/vm-url>/
 	```
 
 ### Backend server
