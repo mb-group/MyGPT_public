@@ -15,6 +15,13 @@ We will also need several tools to run the pipeline:
 *   Docker
 *   Ollama
 
+Operating system: Mac OS
+*   Mac OS 13.0 or later
+*   Apple silicon (M1 or M2) preferred, but Intel is also supported
+
+## Installation time
+The installation of MyGPT pipeline should take around 30-60 minutes depending on your system specifications. The installation time will be longer if you are using a slower internet connection.
+
 ## Requirements installation
 
 We will install these required tools in the following steps:

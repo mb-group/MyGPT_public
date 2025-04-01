@@ -17,7 +17,12 @@ We will also need several tools to run the pipeline:
 *   Docker
 *   Ollama
 
-## Requirements installation
+Operating system: Linux (Ubuntu 20.04 LTS or Red Hat Linux)
+
+## Installation time
+The installation of MyGPT pipeline should take around 30-60 minutes depending on your system specifications. The installation time will be longer if you are using a slower internet connection.
+
+## Requirements Installation
 
 We will install these two tools in the following steps:
 

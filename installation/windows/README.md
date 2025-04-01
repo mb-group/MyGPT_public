@@ -16,6 +16,15 @@ We will also need several tools to run the pipeline:
 *   Docker
 *   Ollama
 
+Operating system: Windows 10 or later
+*   Windows Subsystem for Linux (WSL) is not required, but it is recommended to use WSL2 for better performance and compatibility with Linux-based tools.
+*   Windows 11 is recommended for better performance and compatibility with Docker and other tools.
+*   Windows 10 is also supported, but some features may not work as expected.
+*   Windows 8 or earlier versions are not supported and may not work with the MyGPT pipeline.
+
+## Installation time
+The installation of MyGPT pipeline should take around 30-60 minutes depending on your system specifications. The installation time will be longer if you are using a slower internet connection.
+
 ## Requirements installation
 
 We will install these two tools in the following steps:
