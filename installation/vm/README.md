@@ -135,3 +135,19 @@ We also recommand to change envrironment variables in the `ollama` folder and se
 [How do I configure Ollama server?](https://github.com/ollama/ollama/blob/main/docs/linux.md)
 
 We also securely hosted Ollama server using Nginx. You can follow the instructions in the [Nginx configuration guide for Ollama](https://github.com/ollama/ollama/blob/main/docs/faq.md#how-can-i-use-ollama-with-a-proxy-server)
+
+
+## HPC hosting via Sigularity
+
+singularity users utilize the built in image conversion capability of Singularity to convert docker to sif file.
+Simply pulling from a docker registry will work.
+
+```bash
+singularity pull docker://ghcr.io/mb-group/mygpt-frontend:latest
+```
+
+And use the following command to run the image.
+
+```bash
+singularity run mygpt-frontend.sif
+```
