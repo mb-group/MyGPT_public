@@ -70,6 +70,17 @@ Here is an example of the user interface with question, answer, and source citin
 
 <img src='./images/MyGPT_UI.png' width='800px' alt='MyGPT user interface'>
 
+## MyGPT MCP Server and Client
+
+MyGPT provides a basic implementation of the Model Context Protocol (MCP) server and client, facilitating integration with other private LLM applications and data sources within the same AI ecosystem. The MyGPT MCP server exposes data from the MyGPT backend using MCP tools, which any third-party MCP client can utilize. Conversely, the MyGPT MCP client enables connections to the MCP server, whether it is running locally or in a private network. This feature allows the client to use private database information as context, in addition to information from documents.
+
+> [!NOTE] 
+> To configure the MyGPT MCP server or client, follow the instructions on Readme file in the respective operating system.
+
+<img src="./images/MyGPT_MCP_UI.png?raw=true" width="1000px" alt="MyGPT MCP UI">
+
+<b>MyGPT MCP Client User Interface (UI) and Customization Menu</b> 
+
 ## FAQs
 
 Check out the [FAQs](./FAQs.md) for common questions and answers.
