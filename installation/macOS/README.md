@@ -94,6 +94,12 @@ Total: 9.975889s
 
 If it's taking more than a minute to run, your laptop might not have enough resources to run Ollama.
 
+Also, get the nomic embedding model, which is best performing embedding model for MyGPT pipeline, by running following command:
+
+```
+ollama pull nomic-embed-text
+```
+
 ## MyGPT installation
 
 1. **Get MyGPT source code**
