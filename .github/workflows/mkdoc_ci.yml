@@ -1,4 +1,4 @@
-name: ci 
+name: mkdoc ci 
 on:
   push:
     branches:
