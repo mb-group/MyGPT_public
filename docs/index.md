@@ -1,7 +1,7 @@
 
 <!-- make div and show logo in middle -->
 <div align="center" style='padding:20px;'>
-    <img src='./images/mygpt_logo_color.png' width='200px' alt='MyGPT logo'>
+    <img src='./img/mygpt_logo_color.png' width='200px' alt='MyGPT logo'>
 </div>
 
 # MyGPT_public
@@ -14,7 +14,7 @@ ChatGPT has revolutionized creative occupations, but tasks requiring factual bac
 
 ## Pipeline
 
-<img src='./images/pipeline.png' width='800px' alt='MyGPT pipeline'>
+<img src='./img/pipeline.png' width='800px' alt='MyGPT pipeline'>
 
 We have divided the MyGPT pipeline architecture into three sections: 
 1. <ins>User interface (UI)</ins>: The UI is the front-end of the pipeline. It is a web application that allows users to interact with the pipeline. The UI is built using ReactJS.

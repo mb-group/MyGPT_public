@@ -7,6 +7,10 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+  features:
+    - navigation.instant
+  plugins:
+    - search
 nav:
   - Home: index.md
   - Installation: installation/README.md
