@@ -3,6 +3,7 @@ site_url: https://mygpt.stjude.org
 theme:
   name: material
   palette:
+    scheme: slate
     primary: cyan
   font:
     text: Roboto
