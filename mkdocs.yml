@@ -1,8 +1,12 @@
 site_name: MyGPT
 site_url: https://mygpt.stjude.org
 theme:
+  name: material
   palette:
     primary: cyan
+  font:
+    text: Roboto
+    code: Roboto Mono
 nav:
   - Home: index.md
   - Installation: installation/README.md
