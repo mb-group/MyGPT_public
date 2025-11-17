@@ -1,0 +1,4 @@
+site_name: MyGPT
+site_url: https://mygpt.stjude.org
+theme:
+  name: material
