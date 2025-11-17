@@ -4,7 +4,7 @@
     <img src='./img/mygpt_logo_color.png' width='200px' alt='MyGPT logo'>
 </div>
 
-# MyGPT_public
+# MyGPT
 
 <b>Note:</b> This repository contains installation instructions for the MyGPT with Docker images and will not need source code. If you need access to MyGPT source to help in development process, please contact Jaimin Patel (Email: jaimin.patel@stjude.org) or appropriate person.</b>
 

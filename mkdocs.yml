@@ -9,6 +9,8 @@ theme:
     code: Roboto Mono
   features:
     - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
   plugins:
     - search
 nav:
