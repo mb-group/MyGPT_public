@@ -60,7 +60,7 @@ We will install these required tools in the following steps:
 	If you get an error that `docker not found`, go to the official Docker installation page for Mac and install the appropriate Docker on your system: https://docs.docker.com/desktop/install/mac-install/
 
 	You can change Docker setting to match requirements for MyGPT:
-	<img src="../../images/docker_resources.png?raw=true" width="700px">
+	<img src="../../img/docker_resources.png?raw=true" width="700px">
 
 
 4. **Ollama installation**
@@ -118,7 +118,7 @@ ollama pull nomic-embed-text
 > [!CAUTION] 
 > While generating you GitHub Access Token, make sure you check access for `repo` and  `read:packages` similar to image below.
 
-<img src="../../images/GitHub_access_token_scope.png?raw=true" width="600px">
+<img src="../../img/GitHub_access_token_scope.png?raw=true" width="600px">
 
 2. login to GitHub Docker registry
 
@@ -146,11 +146,11 @@ docker login ghcr.io
 	You can see status of different components of MyGPT pipeline on these pages.
 	* backend: http://localhost:8000/
 
-		<img src="../../images/backend_server.png?raw=true" width="500px">
+		<img src="../../img/backend_server.png?raw=true" width="500px">
 
 	* frontend: http://localhost:3000/
 
-		<img src="../../images/frontend_launch.png?raw=true" width="1200px">
+		<img src="../../img/frontend_launch.png?raw=true" width="1200px">
 
 
 ## MyGPT pipeline usage
@@ -163,7 +163,7 @@ docker login ghcr.io
 
 * You can upload upto 40 PDFs at a time. You can upload multiple times to same library. It will take some time to process the documents and once it's done, you can see your new library in the list with success message.
 
-	<img src="../../images/MyGPT_upload_menu.png?raw=true" width="800px">
+	<img src="../../img/MyGPT_upload_menu.png?raw=true" width="800px">
 
 ### **Add Zotero library**
 
@@ -173,7 +173,7 @@ docker login ghcr.io
 
 * If you need help getting any of these, you can click on the help button next to the input field or check section after screenshot.
 
-	<img src="../../images/MyGPT_zotero_menu.png?raw=true" width="800px">
+	<img src="../../img/MyGPT_zotero_menu.png?raw=true" width="800px">
 
 * <ins>Zotero API key:</ins> You can generate an API key in your profile settings https://www.zotero.org/settings/keys
 
@@ -244,7 +244,7 @@ Select the MCP tools you want to use from the customization page.
 
 Once you select the tools, go to the main page and select LLM with tool support and you should see the MCP tools in the chat interface.
 
-<img src="../../images/MyGPT_MCP_UI.png?raw=true" width="1000px">
+<img src="../../img/MyGPT_MCP_UI.png?raw=true" width="1000px">
 
 ### stop docker containers
 
