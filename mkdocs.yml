@@ -16,7 +16,11 @@ theme:
     - search
 nav:
   - Home: index.md
-  - Installation: installation/README.md
+  - Installation: 
+    - Instructions: installation/README.md
+    - Mac installation: installation/macOS/README.md
+    - Linux installation: installation/linux/README.md
+    - Windows installation: installation/windows/README.md
   - Developer's Guide: development.md
   - FAQs: FAQs.md
   - Contact: contact.md
