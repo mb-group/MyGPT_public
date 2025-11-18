@@ -25,7 +25,7 @@ MyGPT user interface will allow users to check the publcation library, ask quest
 
 Here is an example of the user interface with question, answer, and source citing:
 
-<img src='../img/MyGPT_UI.png' width='1200px' alt='MyGPT user interface'>
+<img src='./img/MyGPT_UI.png' width='1200px' alt='MyGPT user interface'>
 
 ## MyGPT MCP Server and Client
 
@@ -34,7 +34,7 @@ MyGPT provides a basic implementation of the Model Context Protocol (MCP) server
 > [!NOTE] 
 > To configure the MyGPT MCP server or client, follow the instructions on Readme file in the respective operating system.
 
-<img src="../img/MyGPT_MCP_UI.png?raw=true" width="1200px" alt="MyGPT MCP UI">
+<img src="./img/MyGPT_MCP_UI.png?raw=true" width="1200px" alt="MyGPT MCP UI">
 
 <b>MyGPT MCP Client User Interface (UI) and Customization Menu</b> 
 
